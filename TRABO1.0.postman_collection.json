@@ -1,0 +1,350 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TRABO1.0",
+		"_postman_id": "255adc7c-65c6-fd46-b31d-0705fab1e5aa",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "bot",
+			"description": "",
+			"item": [
+				{
+					"name": "bot/get_by_uuid",
+					"request": {
+						"url": "{{base_url}}/bot/uuid/791398e4-71e5-4df4-8a78-6e5680879a09",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "bot/set_indicators",
+					"request": {
+						"url": "{{base_url}}/bot/setindicators",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bot_uuid\":\"095d468f-0c9c-44a5-a098-4d15ded0dc2f\",\n\t\"indicators_uuid\":[\t\"uuid_test_getAll6e789529-e3ce-47d4-bf7e-bf4a88601829\", \"uuid_test_getById0490fc98-0ea8-417b-bb45-03c1212a15a5\", \"uuid_test_getByIde60ee02f-20ad-48a1-9f8a-790ebe56b733\"]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "bot/save",
+					"request": {
+						"url": "{{base_url}}/bot/save",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Rinforcement bot\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "bot/all",
+					"request": {
+						"url": "{{base_url}}/bot/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "trigger",
+			"description": "",
+			"item": [
+				{
+					"name": "trigger/save",
+					"request": {
+						"url": "{{base_url}}/trigger/save",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"time_step\":118\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "trigger/getAll",
+					"request": {
+						"url": "{{base_url}}trigger/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "trigger/get_by_uuid",
+					"request": {
+						"url": "{{base_url}}/trigger/uuid/test_trigger_Controller_savec79c349d-54a8-4676-9cd5-143602aaba37",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "trigger/delete",
+					"request": {
+						"url": "{{base_url}}/trigger/delete/test_trigger_Controller_savec79c349d-54a8-4676-9cd5-143602aaba37",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"description": "",
+			"item": [
+				{
+					"name": "user/user_auth",
+					"request": {
+						"url": "{{base_url}}/user/auth",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"login\":\"login\",\n\t\"passwd\":\"passwordddd\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "user/save",
+					"request": {
+						"url": "http://127.0.0.1:5000/user/save",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjkwNTcxNywianRpIjoiYzEyYjZhYzQtYWNkZC00MmYyLWJkNWUtMTAyYTk2ODRjYWVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImxvZ2luIiwibmJmIjoxNjYyOTA1NzE3LCJleHAiOjE2NjI5MDY2MTcsInV1aWQiOiJleGlzdGluZ190ZXN0SWQifQ.kuVsd17qeEnRX2sduXtGR2Hp9t1tMKYWRPGheIuPZ7E",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\t\t\"uuid\":\"existing_UserId\",\n            \"login\":\"login\",\n            \"passwd\":\"passwordddd\",\n            \"first_name\":\"first_name\",\n            \"last_name\":\"last_name\",\n            \"birthday\": \"09/09/2022\",\n            \"id_card\":\"id_card\",\n            \"link_recto_id\":\"link_recto_id\",\n            \"link_verso_id\":\"link_verso_id\",\n            \"link_photo\":\"link_photo\"\n   \n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "user/get_user_by_cardid",
+					"request": {
+						"url": "http://127.0.0.1:5000/user/cardid/id_card",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MzAxNDM3NSwianRpIjoiNTkyZWY0ZWEtYjJjNi00MmFiLThlOGUtOGFjNjQ4OGFmN2Y1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImxvZ2luIiwibmJmIjoxNjYzMDE0Mzc1LCJleHAiOjE2NjMwMTUyNzUsInV1aWQiOiJleGlzdGluZ190ZXN0SWQifQ.dXNaevgCspbtgrGBopNinMHseVnBeRcVtr0Lh-gjlRY",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "user/get_user_by_uuid",
+					"request": {
+						"url": "{{base_url}}/user/uuid/existing_testId",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "user/delete",
+					"request": {
+						"url": "{{base_url}}/user/delete/uuid_test_getByLoginPasswdc9d2763e-3b6c-407b-b1b1-f78721c1b0f1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "indicator",
+			"description": "",
+			"item": [
+				{
+					"name": "indicator/all",
+					"request": {
+						"url": "{{base_url}}/indicator/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "indicator/botid",
+					"request": {
+						"url": "{{base_url}}/indicator/botid/791398e4-71e5-4df4-8a78-6e5680879a09",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "indicator/save",
+					"request": {
+						"url": "{{base_url}}/indicator/save",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t \"name\": \"indicateur de prix\",\n    \"type\": \"type 1\" ,\n    \"fitcher_uuid\": \"fitcheruuid\",\n    \"indicator_input_uuid\": \"indicator\",\n    \"description\":\"get peice from binance\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
