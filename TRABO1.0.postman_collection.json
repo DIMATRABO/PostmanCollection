@@ -359,6 +359,113 @@
 			]
 		},
 		{
+			"name": "order",
+			"description": "",
+			"item": [
+				{
+					"name": "order/save",
+					"request": {
+						"url": "{{base_url}}/order/save",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n           \"id_order\": \"id_order\", \r\n            \"status\": \"status\",\r\n            \"is_bot\": false,\r\n            \"type\":\"type\",\r\n            \"is_buy\": false,\r\n            \"price\":100,\r\n            \"quantity\":100,\r\n            \"wallet_id\": \"wallet_id\"\r\n }  "
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "order/update",
+					"request": {
+						"url": "{{base_url}}/order/update",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"uuid\":\"8e6220aa-a3af-4812-b5de-051c71d3f776\",\n    \"id_order\": \"id_order\", \n            \"status\": \"status\",\n            \"is_bot\": false,\n            \"type\":\"type\",\n            \"is_buy\": false,\n            \"price\":100,\n            \"quantity\":100,\n            \"wallet_id\": \"wallet_id\"\n            }  "
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "order/getAll",
+					"request": {
+						"url": "{{base_url}}/trade/all",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "order/get_by_uuid",
+					"request": {
+						"url": "{{base_url}}/trade/uuid/39be4b32-aff2-4121-825f-0cea3a268461",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "order/delete",
+					"request": {
+						"url": "{{base_url}}/trade/delete/39be4b32-aff2-4121-825f-0cea3a268461",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "exchnge",
 			"description": "",
 			"item": [
