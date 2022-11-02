@@ -1,144 +1,178 @@
 {
-	"variables": [],
 	"info": {
+		"_postman_id": "d7495ee2-9b0d-4d1e-9b97-742e951d3140",
 		"name": "TRABO1.0",
-		"_postman_id": "255adc7c-65c6-fd46-b31d-0705fab1e5aa",
-		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "bot",
-			"description": "",
 			"item": [
 				{
 					"name": "bot/get_by_uuid",
 					"request": {
-						"url": "{{base_url}}/bot/uuid/uuid_test_savef0ff1274-2ee8-4d67-aaeb-ae043a0fd882",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/bot/uuid/uuid_test_savef0ff1274-2ee8-4d67-aaeb-ae043a0fd882",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"bot",
+								"uuid",
+								"uuid_test_savef0ff1274-2ee8-4d67-aaeb-ae043a0fd882"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "bot/set_indicators",
 					"request": {
-						"url": "{{base_url}}/bot/setindicators",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"bot_uuid\":\"095d468f-0c9c-44a5-a098-4d15ded0dc2f\",\n\t\"indicators_uuid\":[\t\"uuid_test_getAll6e789529-e3ce-47d4-bf7e-bf4a88601829\", \"uuid_test_getById0490fc98-0ea8-417b-bb45-03c1212a15a5\", \"uuid_test_getByIde60ee02f-20ad-48a1-9f8a-790ebe56b733\"]\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/bot/setindicators",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"bot",
+								"setindicators"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "bot/save",
 					"request": {
-						"url": "{{base_url}}/bot/save",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"name\": \"Rinforcement bot\"\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/bot/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"bot",
+								"save"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "bot/update",
 					"request": {
-						"url": "{{base_url}}/bot/update",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"uuid\":\"uuid_test_savef0ff1274-2ee8-4d67-aaeb-ae043a0fd882\",\n\t\"name\": \"Rinforcement bot2\"\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/bot/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"bot",
+								"update"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "bot/all",
 					"request": {
-						"url": "{{base_url}}/bot/all",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/bot/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"bot",
+								"all"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "bot/delete",
 					"request": {
-						"url": "{{base_url}}/bot/delete/d4c90138-0c8b-458b-94b2-6557e7aff6c5",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"description": ""
+								"value": "application/x-www-form-urlencoded"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/bot/delete/d4c90138-0c8b-458b-94b2-6557e7aff6c5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"bot",
+								"delete",
+								"d4c90138-0c8b-458b-94b2-6557e7aff6c5"
+							]
+						}
 					},
 					"response": []
 				}
@@ -146,106 +180,137 @@
 		},
 		{
 			"name": "trigger",
-			"description": "",
 			"item": [
 				{
 					"name": "trigger/save",
 					"request": {
-						"url": "{{base_url}}/trigger/save",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\"time_step\":118\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trigger/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trigger",
+								"save"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trigger/update",
 					"request": {
-						"url": "{{base_url}}/trigger/update",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\"uuid\":\"39be4b32-aff2-4121-825f-0cea3a268461\",\n\"time_step\":150\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trigger/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trigger",
+								"update"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trigger/getAll",
 					"request": {
-						"url": "{{base_url}}/trigger/all",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trigger/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trigger",
+								"all"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trigger/get_by_uuid",
 					"request": {
-						"url": "{{base_url}}/trigger/uuid/39be4b32-aff2-4121-825f-0cea3a268461",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trigger/uuid/39be4b32-aff2-4121-825f-0cea3a268461",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trigger",
+								"uuid",
+								"39be4b32-aff2-4121-825f-0cea3a268461"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trigger/delete",
 					"request": {
-						"url": "{{base_url}}/trigger/delete/39be4b32-aff2-4121-825f-0cea3a268461",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trigger/delete/39be4b32-aff2-4121-825f-0cea3a268461",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trigger",
+								"delete",
+								"39be4b32-aff2-4121-825f-0cea3a268461"
+							]
+						}
 					},
 					"response": []
 				}
@@ -253,106 +318,137 @@
 		},
 		{
 			"name": "trade",
-			"description": "",
 			"item": [
 				{
 					"name": "trade/save",
 					"request": {
-						"url": "{{base_url}}/trade/save",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n\r\n            \"id_trade\": \"id_trade\", \r\n            \"trading_pair\": \"trading_pair\",\r\n            \"is_buy\": true,\r\n            \"execution_price\": 12,\r\n            \"execution_quantity\": 13,\r\n            \"execution_timestamp\": 14,\r\n            \"order_id\": \"oderr_id\"\r\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trade/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trade",
+								"save"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trade/update",
 					"request": {
-						"url": "{{base_url}}/trade/update",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\t\t\"uuid\":\"8e6220aa-a3af-4812-b5de-051c71d3f776\",\n\t\t\t\"id_trade\": \"id_trade\", \n            \"trading_pair\": \"trading_pair\",\n            \"is_buy\": true,\n            \"execution_price\": 3500,\n            \"execution_quantity\": 3000,\n            \"execution_timestamp\": 400,\n            \"order_id\": \"oderr_id\"\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trade/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trade",
+								"update"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trade/getAll",
 					"request": {
-						"url": "{{base_url}}/trade/all",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trade/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trade",
+								"all"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trade/get_by_uuid",
 					"request": {
-						"url": "{{base_url}}/trade/uuid/39be4b32-aff2-4121-825f-0cea3a268461",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trade/uuid/39be4b32-aff2-4121-825f-0cea3a268461",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trade",
+								"uuid",
+								"39be4b32-aff2-4121-825f-0cea3a268461"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trade/delete",
 					"request": {
-						"url": "{{base_url}}/trade/delete/39be4b32-aff2-4121-825f-0cea3a268461",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trade/delete/39be4b32-aff2-4121-825f-0cea3a268461",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trade",
+								"delete",
+								"39be4b32-aff2-4121-825f-0cea3a268461"
+							]
+						}
 					},
 					"response": []
 				}
@@ -360,106 +456,137 @@
 		},
 		{
 			"name": "order",
-			"description": "",
 			"item": [
 				{
 					"name": "order/save",
 					"request": {
-						"url": "{{base_url}}/order/save",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n           \"id_order\": \"id_order\", \r\n            \"status\": \"status\",\r\n            \"is_bot\": false,\r\n            \"type\":\"type\",\r\n            \"is_buy\": false,\r\n            \"price\":100,\r\n            \"quantity\":100,\r\n            \"wallet_id\": \"wallet_id\"\r\n }  "
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/order/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"order",
+								"save"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "order/update",
 					"request": {
-						"url": "{{base_url}}/order/update",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"uuid\":\"8e6220aa-a3af-4812-b5de-051c71d3f776\",\n    \"id_order\": \"id_order\", \n            \"status\": \"status\",\n            \"is_bot\": false,\n            \"type\":\"type\",\n            \"is_buy\": false,\n            \"price\":100,\n            \"quantity\":100,\n            \"wallet_id\": \"wallet_id\"\n            }  "
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/order/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"order",
+								"update"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "order/getAll",
 					"request": {
-						"url": "{{base_url}}/trade/all",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trade/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trade",
+								"all"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "order/get_by_uuid",
 					"request": {
-						"url": "{{base_url}}/trade/uuid/39be4b32-aff2-4121-825f-0cea3a268461",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trade/uuid/39be4b32-aff2-4121-825f-0cea3a268461",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trade",
+								"uuid",
+								"39be4b32-aff2-4121-825f-0cea3a268461"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "order/delete",
 					"request": {
-						"url": "{{base_url}}/trade/delete/39be4b32-aff2-4121-825f-0cea3a268461",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trade/delete/39be4b32-aff2-4121-825f-0cea3a268461",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trade",
+								"delete",
+								"39be4b32-aff2-4121-825f-0cea3a268461"
+							]
+						}
 					},
 					"response": []
 				}
@@ -467,106 +594,137 @@
 		},
 		{
 			"name": "exchnge",
-			"description": "",
 			"item": [
 				{
 					"name": "exchange/save",
 					"request": {
-						"url": "{{base_url}}/exchange/save",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\"name\":\"name2\",\n\"url\":\"wwwlhflmkj.com\"\n}\n"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/exchange/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"exchange",
+								"save"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "exchange/update",
 					"request": {
-						"url": "{{base_url}}/exchange/update",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\"uuid\":\"39be4b32-aff2-4121-825f-0cea3a268461\",\n\"name\":\"name2\",\n\"url\":\"wwwlhflmkj.com\"\n}\n"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/exchange/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"exchange",
+								"update"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "exchange/getAll",
 					"request": {
-						"url": "{{base_url}}/trigger/all",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trigger/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trigger",
+								"all"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "exchange/get_by_uuid",
 					"request": {
-						"url": "{{base_url}}/trigger/uuid/39be4b32-aff2-4121-825f-0cea3a268461",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trigger/uuid/39be4b32-aff2-4121-825f-0cea3a268461",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trigger",
+								"uuid",
+								"39be4b32-aff2-4121-825f-0cea3a268461"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "exchange/delete",
 					"request": {
-						"url": "{{base_url}}/exchange/delete/39be4b32-aff2-4121-825f-0cea3a268461",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/exchange/delete/39be4b32-aff2-4121-825f-0cea3a268461",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"exchange",
+								"delete",
+								"39be4b32-aff2-4121-825f-0cea3a268461"
+							]
+						}
 					},
 					"response": []
 				}
@@ -574,101 +732,139 @@
 		},
 		{
 			"name": "user",
-			"description": "",
 			"item": [
 				{
 					"name": "user/user_auth",
 					"request": {
-						"url": "{{base_url}}/user/auth",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"login\":\"login\",\n\t\"passwd\":\"passwordddd\"\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/user/auth",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"auth"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "user/save",
 					"request": {
-						"url": "http://127.0.0.1:5000/user/save",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjkwNTcxNywianRpIjoiYzEyYjZhYzQtYWNkZC00MmYyLWJkNWUtMTAyYTk2ODRjYWVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImxvZ2luIiwibmJmIjoxNjYyOTA1NzE3LCJleHAiOjE2NjI5MDY2MTcsInV1aWQiOiJleGlzdGluZ190ZXN0SWQifQ.kuVsd17qeEnRX2sduXtGR2Hp9t1tMKYWRPGheIuPZ7E",
-								"description": ""
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjkwNTcxNywianRpIjoiYzEyYjZhYzQtYWNkZC00MmYyLWJkNWUtMTAyYTk2ODRjYWVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImxvZ2luIiwibmJmIjoxNjYyOTA1NzE3LCJleHAiOjE2NjI5MDY2MTcsInV1aWQiOiJleGlzdGluZ190ZXN0SWQifQ.kuVsd17qeEnRX2sduXtGR2Hp9t1tMKYWRPGheIuPZ7E"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\t\t\"uuid\":\"existing_UserId\",\n            \"login\":\"login\",\n            \"passwd\":\"passwordddd\",\n            \"first_name\":\"first_name\",\n            \"last_name\":\"last_name\",\n            \"birthday\": \"09/09/2022\",\n            \"id_card\":\"id_card\",\n            \"link_recto_id\":\"link_recto_id\",\n            \"link_verso_id\":\"link_verso_id\",\n            \"link_photo\":\"link_photo\"\n   \n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "http://127.0.0.1:5000/user/save",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"save"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "user/get_user_by_cardid",
 					"request": {
-						"url": "{{base_url}}/user/cardid/id_card",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/user/cardid/id_card",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"cardid",
+								"id_card"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "user/get_user_by_uuid",
 					"request": {
-						"url": "{{base_url}}/user/uuid/existing_testId",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/user/uuid/existing_testId",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"uuid",
+								"existing_testId"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "user/delete",
 					"request": {
-						"url": "{{base_url}}/user/delete/uuid_test_getByLoginPasswdc9d2763e-3b6c-407b-b1b1-f78721c1b0f1",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/user/delete/uuid_test_getByLoginPasswdc9d2763e-3b6c-407b-b1b1-f78721c1b0f1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"delete",
+								"uuid_test_getByLoginPasswdc9d2763e-3b6c-407b-b1b1-f78721c1b0f1"
+							]
+						}
 					},
 					"response": []
 				}
@@ -676,98 +872,130 @@
 		},
 		{
 			"name": "indicator",
-			"description": "",
 			"item": [
 				{
 					"name": "indicator/all",
 					"request": {
-						"url": "{{base_url}}/indicator/all",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/indicator/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"indicator",
+								"all"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "indicator/botid",
 					"request": {
-						"url": "{{base_url}}/indicator/botid/791398e4-71e5-4df4-8a78-6e5680879a09",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/indicator/botid/791398e4-71e5-4df4-8a78-6e5680879a09",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"indicator",
+								"botid",
+								"791398e4-71e5-4df4-8a78-6e5680879a09"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "indicator/save",
 					"request": {
-						"url": "{{base_url}}/indicator/save",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t \"name\": \"indicateur de prix\",\n    \"type\": \"type 1\" ,\n    \"fitcher_uuid\": \"fitcheruuid\",\n    \"indicator_input_uuid\": \"indicator\",\n    \"description\":\"get peice from binance\"\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/indicator/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"indicator",
+								"save"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "indicator/get_by_name",
 					"request": {
-						"url": "{{base_url}}/indicator/name/indicateur de prix",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/indicator/name/indicateur de prix",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"indicator",
+								"name",
+								"indicateur de prix"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "indicator/get_by_name copy",
 					"request": {
-						"url": "{{base_url}}/indicator/delete/uuid_test_getAllebca7a28-c1a7-4e1a-acef-bb0ce7bf1629",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/indicator/delete/uuid_test_getAllebca7a28-c1a7-4e1a-acef-bb0ce7bf1629",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"indicator",
+								"delete",
+								"uuid_test_getAllebca7a28-c1a7-4e1a-acef-bb0ce7bf1629"
+							]
+						}
 					},
 					"response": []
 				}
@@ -775,106 +1003,165 @@
 		},
 		{
 			"name": "trading_pair",
-			"description": "",
 			"item": [
 				{
 					"name": "trading_pair/save",
 					"request": {
-						"url": "{{base_url}}/trading-pair/save",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\"symbol\":\"symbol\",\n\"base\":\"base\",\n \"quote\":\"quote\"\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trading-pair/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trading-pair",
+								"save"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trading_pair/get_by_uuid",
 					"request": {
-						"url": "{{base_url}}/trading-pair/uuid/anass",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trading-pair/uuid/anass",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trading-pair",
+								"uuid",
+								"anass"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trading_pair/delete",
 					"request": {
-						"url": "{{base_url}}/trigger/delete/test_trigger_Controller_savec79c349d-54a8-4676-9cd5-143602aaba37",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trigger/delete/test_trigger_Controller_savec79c349d-54a8-4676-9cd5-143602aaba37",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trigger",
+								"delete",
+								"test_trigger_Controller_savec79c349d-54a8-4676-9cd5-143602aaba37"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trigger/update",
 					"request": {
-						"url": "{{base_url}}/trigger/save",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\"time_step\":118\n}"
 						},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trigger/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trigger",
+								"save"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "trigger/getAll",
 					"request": {
-						"url": "{{base_url}}/trading-pair/all",
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{key}}",
-								"description": ""
+								"value": "Bearer {{key}}"
 							}
 						],
-						"body": {},
-						"description": ""
+						"url": {
+							"raw": "{{base_url}}/trading-pair/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"trading-pair",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "template",
+			"item": [
+				{
+					"name": "template/getAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{key}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/template/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"template",
+								"all"
+							]
+						}
 					},
 					"response": []
 				}
